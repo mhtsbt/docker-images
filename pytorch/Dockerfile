@@ -15,6 +15,9 @@ RUN rm /usr/bin/python
 RUN ln -s /usr/bin/python3.6 /usr/bin/python3
 RUN ln -s /usr/bin/python3.6 /usr/bin/python
 
+# upgrade pip
+RUN python -m pip install --upgrade pip
+
 # python packages
 RUN python -m pip install opencv-python
 RUN python -m pip install gym gym[atari] 
