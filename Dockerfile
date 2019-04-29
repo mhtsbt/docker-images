@@ -16,11 +16,11 @@ RUN ln -s /usr/bin/python3.6 /usr/bin/python3
 RUN ln -s /usr/bin/python3.6 /usr/bin/python
 
 # python packages
-RUN pip3 install opencv-python
-RUN pip3 install gym gym[atari] 
-RUN pip3 install numpy 
-RUN pip3 install matplotlib 
-RUN pip3 install atari_py
-RUN pip3 install tensorboardX
-RUN pip3 install torch
-RUN pip3 install ray
+RUN python -m pip install opencv-python
+RUN python -m pip install gym gym[atari] 
+RUN python -m pip install numpy 
+RUN python -m pip install matplotlib 
+RUN python -m pip install atari_py
+RUN python -m pip install tensorboardX
+RUN python -m pip install torch
+RUN python -m pip install ray
