@@ -9,7 +9,7 @@ RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get update
 RUN apt-get install -y git xvfb ffmpeg python-opencv python3.6 python3-pip
 
-RUN pip install opencv-python torch gym gym[atari] numpy matplotlib atari_py tensorboardX
+RUN pip3 install opencv-python torch gym gym[atari] numpy matplotlib atari_py tensorboardX
 
 # make python 3.6 the default version
 RUN rm /usr/bin/python3
