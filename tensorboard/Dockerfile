@@ -22,4 +22,4 @@ RUN python -m pip install --upgrade pip
 RUN python -m pip install tensorflow==1.12.0
 RUN python -m pip install tensorboard
 
-CMD ['tensorboard','--logdir','/logs']
+CMD ["tensorboard","--logdir","/logs"]
