@@ -7,7 +7,7 @@ RUN apt-get install -y software-properties-common
 
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get update
-RUN apt-get install -y git xvfb ffmpeg python-opencv python3.6 python3-pip
+RUN apt-get install -y git xvfb ffmpeg python-opencv python3.6 python3-pip python3-dev
 
 # make python 3.6 the default version
 RUN rm /usr/bin/python3
