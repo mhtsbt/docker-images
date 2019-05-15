@@ -1,8 +1,22 @@
-FROM python:3.7-alpine
+FROM python:3.7-stretch
 
-RUN apk --no-cache --update-cache add gcc gfortran python-dev build-base wget freetype-dev libpng-dev openblas-dev
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update
+
+RUN apt-get install -y curl software-properties-common
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+
+
+RUN apt-get install -y gcc gfortran python-dev wget libpng-dev nodejs
 
 RUN pip install --upgrade pip
 RUN pip install jupyter numpy matplotlib pandas
 
-ENTRYPOINT [ "python", "-m", "jupyter", "notebook" ]
+RUN pip install jupyterlab
+
+RUN python -m jupyter labextension install @jupyterlab/git
+RUN pip install jupyterlab-git
+RUN python -m jupyter serverextension enable --py jupyterlab_git
+
+ENTRYPOINT [ "python", "-m", "jupyter", "lab" ]
