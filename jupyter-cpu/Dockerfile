@@ -1,6 +1,6 @@
 FROM python:3.7-stretch
 
-EXPOSE 8889
+EXPOSE 8888
 
 ENV DEBIAN_FRONTEND=noninteractive
 
