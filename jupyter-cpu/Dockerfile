@@ -1,5 +1,7 @@
 FROM python:3.7-stretch
 
+EXPOSE 8889
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
@@ -19,4 +21,4 @@ RUN python -m jupyter labextension install @jupyterlab/git
 RUN pip install jupyterlab-git
 RUN python -m jupyter serverextension enable --py jupyterlab_git
 
-ENTRYPOINT [ "python", "-m", "jupyter", "lab" ]
+ENTRYPOINT [ "python", "-m", "jupyter", "lab","--ip=0.0.0.0","--allow-root"]
