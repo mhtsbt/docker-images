@@ -4,5 +4,5 @@ JupyerLab extensions:
 Add a password to the container: "--NotebookApp.token=xxx"
 
 ```
-docker run --name jl -p 8888:8888 -d -v /data_in:/data mhtsbt/jupyter-gpu --NotebookApp.token=xxx
+nvidia-docker run --name jl -p 8889:8888 -d -v /data_in:/data mhtsbt/jupyter-gpu --NotebookApp.token=xxx
 ```
