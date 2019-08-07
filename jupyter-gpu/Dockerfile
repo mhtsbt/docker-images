@@ -13,7 +13,7 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y gcc gfortran python-dev wget libpng-dev nodejs
 
 RUN pip install --upgrade pip
-RUN pip install jupyter numpy matplotlib pandas
+RUN pip install jupyter numpy matplotlib pandas tensorboard tensorflow-gpu
 
 RUN pip install jupyterlab
 
