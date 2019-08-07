@@ -27,3 +27,8 @@ RUN python -m pip install atari_py
 RUN python -m pip install tensorboardX
 RUN python -m pip install torch
 RUN python -m pip install ray
+
+# ENV VARS
+ENV MKL_NUM_THREADS 10
+ENV NUMEXPR_NUM_THREADS=10
+ENV OMP_NUM_THREADS=10
