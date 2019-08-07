@@ -1,6 +1,7 @@
 FROM mhtsbt/pytorch
 
 EXPOSE 8888
+EXPOSE 6006
 
 ENV DEBIAN_FRONTEND=noninteractive
 
