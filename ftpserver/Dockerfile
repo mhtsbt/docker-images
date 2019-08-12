@@ -1,8 +1,10 @@
 FROM alpine:3.7
 
+EXPOSE 20 21 10090-10100
+
 RUN apk add --no-cache vsftpd
 
-RUN adduser -h /home/./files -s /bin/false -D files
+RUN adduser -h /home/./mhtsbt -s /bin/false -D mhtsbt
 
 RUN echo "local_enable=YES" >> /etc/vsftpd/vsftpd.conf \
   && echo "chroot_local_user=YES" >> /etc/vsftpd/vsftpd.conf \
@@ -20,4 +22,4 @@ ADD entry.sh /
 
 VOLUME /data
 
-CMD /entry.sh
+CMD ["sh","entry.sh"]
