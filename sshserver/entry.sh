@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ -z ${PASSWORD} ]; then
-  PASSWORD=$(< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-8};echo;)
+  PASSWORD=$(< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-16};echo;)
   echo "Generated password for user 'root': ${PASSWORD}"
 fi
 # set ftp user password
