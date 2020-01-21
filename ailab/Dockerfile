@@ -7,6 +7,6 @@ RUN git config --global user.email "matthias.hutsebaut@gmail.com"
 RUN git config --global user.name "mhtsbt"
 RUN git config --global credential.helper 'cache –timeout 28800'
 
-RUN pip3 install torch tensorflow-gpu numpy tensorboard matplotlib
+RUN pip3 install --no-cache-dir torch tensorflow-gpu numpy tensorboard matplotlib
 
 CMD ["tail","-f","/dev/null"]
