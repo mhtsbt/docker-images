@@ -1,7 +1,7 @@
 FROM jupyter/scipy-notebook
 
 USER root
-RUN python -m pip --no-cache install torch
+RUN python -m pip --no-cache install torch tensorboard tensorflow-gpu
 
 RUN apt-get update && apt install -y graphviz libgraphviz-dev libcgraph6 git ssh htop && rm -rf /var/lib/apt/lists/*
 
