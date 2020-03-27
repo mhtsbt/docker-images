@@ -1,0 +1,648 @@
+Project: 14310 (Run 300, Clone 36, Gen 1)
+Unit: 0x000000010002894c5e6cf8cdd4b506aa
+CPU: 0x00000000000000000000000000000000
+Machine: 1
+Reading tar file core.xml
+Reading tar file integrator.xml
+Reading tar file state.xml
+Reading tar file system.xml
+Digital signatures verified
+*************************** Core21 Folding@home Core ***************************
+       Type: 33
+       Core: Core21
+    Website: http://folding.stanford.edu/
+  Copyright: (c) 2009-2014 Stanford University
+     Author: Yutong Zhao <yutong.zhao@stanford.edu>
+       Args: -dir 01 -suffix 01 -version 705 -lifeline 23081 -checkpoint 15
+             -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device
+             0 -gpu 0
+     Config: <none>
+************************************ Build *************************************
+    Version: 0.0.20
+       Date: Mar 15 2017
+       Time: 17:05:57
+ Repository: Git
+   Revision: c7f9dda6a0531fd6ddfb91818558faa2384f80a0
+     Branch: HEAD
+   Compiler: GNU 4.4.7 20120313 (Red Hat 4.4.7-17)
+    Options: -std=gnu++98 -O3 -funroll-loops -mfpmath=sse -ffast-math
+             -fno-unsafe-math-optimizations -msse2
+   Platform: linux2 4.9.4-moby
+       Bits: 64
+       Mode: Release
+************************************ System ************************************
+        CPU: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+     CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+       CPUs: 8
+     Memory: 31.32GiB
+Free Memory: 18.35GiB
+    Threads: POSIX_THREADS
+ OS Version: 5.3
+Has Battery: false
+ On Battery: false
+ UTC Offset: 1
+        PID: 23085
+        CWD: /home/matthias/Code/docker-images/folding-home/work
+         OS: Linux 5.3.0-40-generic x86_64
+    OS Arch: AMD64
+       GPUs: 0
+       CUDA: Not detected
+     OpenCL: Not detected
+********************************************************************************
+Folding@home GPU Core21 Folding@home Core
+Version 0.0.20
+[1] compatible platform(s):
+  -- 0 --
+  PROFILE = FULL_PROFILE
+  VERSION = OpenCL 1.2 CUDA 10.1.120
+  NAME = NVIDIA CUDA
+  VENDOR = NVIDIA Corporation
+
+(1) device(s) found on platform 0:
+  -- 0 --
+  DEVICE_NAME = GeForce GTX 1060 6GB
+  DEVICE_VENDOR = NVIDIA Corporation
+  DEVICE_VERSION = OpenCL 1.2 CUDA
+
+[ Entering Init ]
+  Launch time: 2020-03-15T17:27:12Z
+  Arguments passed: -dir 01 -suffix 01 -version 705 -lifeline 23081 -checkpoint 15 -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu 0 
+  For testState comparison of CPU and GPU, will use:
+    forceTolerance: 5 kJ/mol/nm
+    energyTolerance: 10 kJ/mol
+[ Leaving  Init ]
+[ Entering Main ]
+  Reading core settings...
+  Total number of steps: 25000000
+  XTC write frequency: 250000
+  Checkpoint write frequency: 250000 (1%)
+  Number of frames per WU: 100
+[ Initializing Core Contexts ]
+  Using platform OpenCL
+  Looking for vendor: nvidia...found on platformId 0
+  Setting platform precision to mixed
+  Deserializing System...
+    Found: 13231 atoms, 6 forces.
+  Deserializing State...  done.
+    Ewald error tolerance in force 0 is 0.0005
+    Ewald parameters: alpha 2.920289872087185 nx 48 ny 48 nz 48
+    Integrator Type: N6OpenMM18LangevinIntegratorE
+    Constraint Tolerance: 1e-05
+    Time Step in PS: 0.002
+    Temperature: 323.15
+    Friction Coeff: 1
+    Using CPU platform for reference calculations.
+  Checking core state against reference...
+  Checking checkpoint state against reference...
+[ Initialized Core Contexts... ]
+  Using OpenCL on platformId 0 and gpu 0
+  v(^_^)v  MD ready starting from step 0
+
+Completed 0 out of 25000000 steps (0%)
+Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+Completed 250000 out of 25000000 steps (1%)
+Performance since last checkpoint: 154.8387097 ns/day
+Completed 500000 out of 25000000 steps (2%)
+Performance since last checkpoint: 153.7366548 ns/day
+Caught signal SIGINT(2) on PID 23085
+Exiting, please wait. . .
+2020-03-15T17:38:34Z
+[ Leaving  Main ]
+Folding@home Core Shutdown: INTERRUPTED
+Project: 14310 (Run 300, Clone 36, Gen 1)
+Unit: 0x000000010002894c5e6cf8cdd4b506aa
+CPU: 0x00000000000000000000000000000000
+Machine: 1
+Digital signatures verified
+*************************** Core21 Folding@home Core ***************************
+       Type: 33
+       Core: Core21
+    Website: http://folding.stanford.edu/
+  Copyright: (c) 2009-2014 Stanford University
+     Author: Yutong Zhao <yutong.zhao@stanford.edu>
+       Args: -dir 01 -suffix 01 -version 705 -lifeline 25144 -checkpoint 15
+             -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device
+             0 -gpu 0
+     Config: <none>
+************************************ Build *************************************
+    Version: 0.0.20
+       Date: Mar 15 2017
+       Time: 17:05:57
+ Repository: Git
+   Revision: c7f9dda6a0531fd6ddfb91818558faa2384f80a0
+     Branch: HEAD
+   Compiler: GNU 4.4.7 20120313 (Red Hat 4.4.7-17)
+    Options: -std=gnu++98 -O3 -funroll-loops -mfpmath=sse -ffast-math
+             -fno-unsafe-math-optimizations -msse2
+   Platform: linux2 4.9.4-moby
+       Bits: 64
+       Mode: Release
+************************************ System ************************************
+        CPU: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+     CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+       CPUs: 8
+     Memory: 31.32GiB
+Free Memory: 18.08GiB
+    Threads: POSIX_THREADS
+ OS Version: 5.3
+Has Battery: false
+ On Battery: false
+ UTC Offset: 1
+        PID: 25148
+        CWD: /home/matthias/Code/docker-images/folding-home/work
+         OS: Linux 5.3.0-40-generic x86_64
+    OS Arch: AMD64
+       GPUs: 0
+       CUDA: Not detected
+     OpenCL: Not detected
+********************************************************************************
+Folding@home GPU Core21 Folding@home Core
+Version 0.0.20
+[1] compatible platform(s):
+  -- 0 --
+  PROFILE = FULL_PROFILE
+  VERSION = OpenCL 1.2 CUDA 10.1.120
+  NAME = NVIDIA CUDA
+  VENDOR = NVIDIA Corporation
+
+(1) device(s) found on platform 0:
+  -- 0 --
+  DEVICE_NAME = GeForce GTX 1060 6GB
+  DEVICE_VENDOR = NVIDIA Corporation
+  DEVICE_VERSION = OpenCL 1.2 CUDA
+
+[ Entering Init ]
+  Launch time: 2020-03-15T17:43:43Z
+  Arguments passed: -dir 01 -suffix 01 -version 705 -lifeline 25144 -checkpoint 15 -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu 0 
+  Found a checkpoint file
+  For testState comparison of CPU and GPU, will use:
+    forceTolerance: 5 kJ/mol/nm
+    energyTolerance: 10 kJ/mol
+[ Leaving  Init ]
+[ Entering Main ]
+  Reading core settings...
+  Total number of steps: 25000000
+  XTC write frequency: 250000
+  Checkpoint write frequency: 250000 (1%)
+  Number of frames per WU: 100
+[ Initializing Core Contexts ]
+  Using platform OpenCL
+  Looking for vendor: nvidia...found on platformId 0
+  Setting platform precision to mixed
+  Deserializing System...
+    Found: 13231 atoms, 6 forces.
+  Deserializing State...  done.
+    Ewald error tolerance in force 0 is 0.0005
+    Ewald parameters: alpha 2.920289872087185 nx 48 ny 48 nz 48
+    Integrator Type: N6OpenMM18LangevinIntegratorE
+    Constraint Tolerance: 1e-05
+    Time Step in PS: 0.002
+    Temperature: 323.15
+    Friction Coeff: 1
+    Using CPU platform for reference calculations.
+  Checking core state against reference...
+  Checking checkpoint state against reference...
+[ Initialized Core Contexts... ]
+  Using OpenCL on platformId 0 and gpu 0
+  v(^_^)v  MD ready starting from step 500000
+
+Completed 500000 out of 25000000 steps (2%)
+Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+Completed 750000 out of 25000000 steps (3%)
+Performance since last checkpoint: 153.1914894 ns/day
+Completed 1000000 out of 25000000 steps (4%)
+Performance since last checkpoint: 153.1914894 ns/day
+Caught signal SIGINT(2) on PID 25148
+Exiting, please wait. . .
+2020-03-15T17:56:02Z
+[ Leaving  Main ]
+Folding@home Core Shutdown: INTERRUPTED
+Project: 14310 (Run 300, Clone 36, Gen 1)
+Unit: 0x000000010002894c5e6cf8cdd4b506aa
+CPU: 0x00000000000000000000000000000000
+Machine: 1
+Digital signatures verified
+*************************** Core21 Folding@home Core ***************************
+       Type: 33
+       Core: Core21
+    Website: http://folding.stanford.edu/
+  Copyright: (c) 2009-2014 Stanford University
+     Author: Yutong Zhao <yutong.zhao@stanford.edu>
+       Args: -dir 01 -suffix 01 -version 705 -lifeline 27883 -checkpoint 15
+             -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device
+             0 -gpu 0
+     Config: <none>
+************************************ Build *************************************
+    Version: 0.0.20
+       Date: Mar 15 2017
+       Time: 17:05:57
+ Repository: Git
+   Revision: c7f9dda6a0531fd6ddfb91818558faa2384f80a0
+     Branch: HEAD
+   Compiler: GNU 4.4.7 20120313 (Red Hat 4.4.7-17)
+    Options: -std=gnu++98 -O3 -funroll-loops -mfpmath=sse -ffast-math
+             -fno-unsafe-math-optimizations -msse2
+   Platform: linux2 4.9.4-moby
+       Bits: 64
+       Mode: Release
+************************************ System ************************************
+        CPU: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+     CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+       CPUs: 8
+     Memory: 31.32GiB
+Free Memory: 17.56GiB
+    Threads: POSIX_THREADS
+ OS Version: 5.3
+Has Battery: false
+ On Battery: false
+ UTC Offset: 1
+        PID: 27887
+        CWD: /home/matthias/Code/docker-images/folding-home/work
+         OS: Linux 5.3.0-40-generic x86_64
+    OS Arch: AMD64
+       GPUs: 0
+       CUDA: Not detected
+     OpenCL: Not detected
+********************************************************************************
+Folding@home GPU Core21 Folding@home Core
+Version 0.0.20
+[1] compatible platform(s):
+  -- 0 --
+  PROFILE = FULL_PROFILE
+  VERSION = OpenCL 1.2 CUDA 10.1.120
+  NAME = NVIDIA CUDA
+  VENDOR = NVIDIA Corporation
+
+(1) device(s) found on platform 0:
+  -- 0 --
+  DEVICE_NAME = GeForce GTX 1060 6GB
+  DEVICE_VENDOR = NVIDIA Corporation
+  DEVICE_VERSION = OpenCL 1.2 CUDA
+
+[ Entering Init ]
+  Launch time: 2020-03-15T18:09:29Z
+  Arguments passed: -dir 01 -suffix 01 -version 705 -lifeline 27883 -checkpoint 15 -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu 0 
+  Found a checkpoint file
+  For testState comparison of CPU and GPU, will use:
+    forceTolerance: 5 kJ/mol/nm
+    energyTolerance: 10 kJ/mol
+[ Leaving  Init ]
+[ Entering Main ]
+  Reading core settings...
+  Total number of steps: 25000000
+  XTC write frequency: 250000
+  Checkpoint write frequency: 250000 (1%)
+  Number of frames per WU: 100
+[ Initializing Core Contexts ]
+  Using platform OpenCL
+  Looking for vendor: nvidia...found on platformId 0
+  Setting platform precision to mixed
+  Deserializing System...
+    Found: 13231 atoms, 6 forces.
+  Deserializing State...  done.
+    Ewald error tolerance in force 0 is 0.0005
+    Ewald parameters: alpha 2.920289872087185 nx 48 ny 48 nz 48
+    Integrator Type: N6OpenMM18LangevinIntegratorE
+    Constraint Tolerance: 1e-05
+    Time Step in PS: 0.002
+    Temperature: 323.15
+    Friction Coeff: 1
+    Using CPU platform for reference calculations.
+  Checking core state against reference...
+  Checking checkpoint state against reference...
+[ Initialized Core Contexts... ]
+  Using OpenCL on platformId 0 and gpu 0
+  v(^_^)v  MD ready starting from step 1000000
+
+Completed 1000000 out of 25000000 steps (4%)
+Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+Completed 1250000 out of 25000000 steps (5%)
+Performance since last checkpoint: 152.1126761 ns/day
+Completed 1500000 out of 25000000 steps (6%)
+Performance since last checkpoint: 151.5789474 ns/day
+Caught signal SIGINT(2) on PID 27887
+Exiting, please wait. . .
+2020-03-15T18:21:50Z
+[ Leaving  Main ]
+Folding@home Core Shutdown: INTERRUPTED
+Project: 14310 (Run 300, Clone 36, Gen 1)
+Unit: 0x000000010002894c5e6cf8cdd4b506aa
+CPU: 0x00000000000000000000000000000000
+Machine: 1
+Digital signatures verified
+*************************** Core21 Folding@home Core ***************************
+       Type: 33
+       Core: Core21
+    Website: http://folding.stanford.edu/
+  Copyright: (c) 2009-2014 Stanford University
+     Author: Yutong Zhao <yutong.zhao@stanford.edu>
+       Args: -dir 01 -suffix 01 -version 705 -lifeline 28983 -checkpoint 15
+             -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device
+             0 -gpu 0
+     Config: <none>
+************************************ Build *************************************
+    Version: 0.0.20
+       Date: Mar 15 2017
+       Time: 17:05:57
+ Repository: Git
+   Revision: c7f9dda6a0531fd6ddfb91818558faa2384f80a0
+     Branch: HEAD
+   Compiler: GNU 4.4.7 20120313 (Red Hat 4.4.7-17)
+    Options: -std=gnu++98 -O3 -funroll-loops -mfpmath=sse -ffast-math
+             -fno-unsafe-math-optimizations -msse2
+   Platform: linux2 4.9.4-moby
+       Bits: 64
+       Mode: Release
+************************************ System ************************************
+        CPU: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+     CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+       CPUs: 8
+     Memory: 31.32GiB
+Free Memory: 21.14GiB
+    Threads: POSIX_THREADS
+ OS Version: 5.3
+Has Battery: false
+ On Battery: false
+ UTC Offset: 1
+        PID: 28987
+        CWD: /home/matthias/Code/docker-images/folding-home/work
+         OS: Linux 5.3.0-40-generic x86_64
+    OS Arch: AMD64
+       GPUs: 0
+       CUDA: Not detected
+     OpenCL: Not detected
+********************************************************************************
+Folding@home GPU Core21 Folding@home Core
+Version 0.0.20
+[1] compatible platform(s):
+  -- 0 --
+  PROFILE = FULL_PROFILE
+  VERSION = OpenCL 1.2 CUDA 10.1.120
+  NAME = NVIDIA CUDA
+  VENDOR = NVIDIA Corporation
+
+(1) device(s) found on platform 0:
+  -- 0 --
+  DEVICE_NAME = GeForce GTX 1060 6GB
+  DEVICE_VENDOR = NVIDIA Corporation
+  DEVICE_VERSION = OpenCL 1.2 CUDA
+
+[ Entering Init ]
+  Launch time: 2020-03-15T18:25:56Z
+  Arguments passed: -dir 01 -suffix 01 -version 705 -lifeline 28983 -checkpoint 15 -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu 0 
+  Found a checkpoint file
+  For testState comparison of CPU and GPU, will use:
+    forceTolerance: 5 kJ/mol/nm
+    energyTolerance: 10 kJ/mol
+[ Leaving  Init ]
+[ Entering Main ]
+  Reading core settings...
+  Total number of steps: 25000000
+  XTC write frequency: 250000
+  Checkpoint write frequency: 250000 (1%)
+  Number of frames per WU: 100
+[ Initializing Core Contexts ]
+  Using platform OpenCL
+  Looking for vendor: nvidia...found on platformId 0
+  Setting platform precision to mixed
+  Deserializing System...
+    Found: 13231 atoms, 6 forces.
+  Deserializing State...  done.
+    Ewald error tolerance in force 0 is 0.0005
+    Ewald parameters: alpha 2.920289872087185 nx 48 ny 48 nz 48
+    Integrator Type: N6OpenMM18LangevinIntegratorE
+    Constraint Tolerance: 1e-05
+    Time Step in PS: 0.002
+    Temperature: 323.15
+    Friction Coeff: 1
+    Using CPU platform for reference calculations.
+  Checking core state against reference...
+  Checking checkpoint state against reference...
+[ Initialized Core Contexts... ]
+  Using OpenCL on platformId 0 and gpu 0
+  v(^_^)v  MD ready starting from step 1500000
+
+Completed 1500000 out of 25000000 steps (6%)
+Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+Completed 1750000 out of 25000000 steps (7%)
+Performance since last checkpoint: 153.7366548 ns/day
+Completed 2000000 out of 25000000 steps (8%)
+Performance since last checkpoint: 152.6501767 ns/day
+Completed 2250000 out of 25000000 steps (9%)
+Performance since last checkpoint: 153.1914894 ns/day
+Completed 2500000 out of 25000000 steps (10%)
+Performance since last checkpoint: 152.1126761 ns/day
+Caught signal SIGINT(2) on PID 28987
+Exiting, please wait. . .
+2020-03-15T18:48:12Z
+[ Leaving  Main ]
+Folding@home Core Shutdown: INTERRUPTED
+Project: 14310 (Run 300, Clone 36, Gen 1)
+Unit: 0x000000010002894c5e6cf8cdd4b506aa
+CPU: 0x00000000000000000000000000000000
+Machine: 1
+Digital signatures verified
+*************************** Core21 Folding@home Core ***************************
+       Type: 33
+       Core: Core21
+    Website: http://folding.stanford.edu/
+  Copyright: (c) 2009-2014 Stanford University
+     Author: Yutong Zhao <yutong.zhao@stanford.edu>
+       Args: -dir 01 -suffix 01 -version 705 -lifeline 30190 -checkpoint 15
+             -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device
+             0 -gpu 0
+     Config: <none>
+************************************ Build *************************************
+    Version: 0.0.20
+       Date: Mar 15 2017
+       Time: 17:05:57
+ Repository: Git
+   Revision: c7f9dda6a0531fd6ddfb91818558faa2384f80a0
+     Branch: HEAD
+   Compiler: GNU 4.4.7 20120313 (Red Hat 4.4.7-17)
+    Options: -std=gnu++98 -O3 -funroll-loops -mfpmath=sse -ffast-math
+             -fno-unsafe-math-optimizations -msse2
+   Platform: linux2 4.9.4-moby
+       Bits: 64
+       Mode: Release
+************************************ System ************************************
+        CPU: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+     CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+       CPUs: 8
+     Memory: 31.32GiB
+Free Memory: 20.50GiB
+    Threads: POSIX_THREADS
+ OS Version: 5.3
+Has Battery: false
+ On Battery: false
+ UTC Offset: 1
+        PID: 30194
+        CWD: /home/matthias/Code/docker-images/folding-home/work
+         OS: Linux 5.3.0-40-generic x86_64
+    OS Arch: AMD64
+       GPUs: 0
+       CUDA: Not detected
+     OpenCL: Not detected
+********************************************************************************
+Folding@home GPU Core21 Folding@home Core
+Version 0.0.20
+[1] compatible platform(s):
+  -- 0 --
+  PROFILE = FULL_PROFILE
+  VERSION = OpenCL 1.2 CUDA 10.1.120
+  NAME = NVIDIA CUDA
+  VENDOR = NVIDIA Corporation
+
+(1) device(s) found on platform 0:
+  -- 0 --
+  DEVICE_NAME = GeForce GTX 1060 6GB
+  DEVICE_VENDOR = NVIDIA Corporation
+  DEVICE_VERSION = OpenCL 1.2 CUDA
+
+[ Entering Init ]
+  Launch time: 2020-03-15T19:12:35Z
+  Arguments passed: -dir 01 -suffix 01 -version 705 -lifeline 30190 -checkpoint 15 -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu 0 
+  Found a checkpoint file
+  For testState comparison of CPU and GPU, will use:
+    forceTolerance: 5 kJ/mol/nm
+    energyTolerance: 10 kJ/mol
+[ Leaving  Init ]
+[ Entering Main ]
+  Reading core settings...
+  Total number of steps: 25000000
+  XTC write frequency: 250000
+  Checkpoint write frequency: 250000 (1%)
+  Number of frames per WU: 100
+[ Initializing Core Contexts ]
+  Using platform OpenCL
+  Looking for vendor: nvidia...found on platformId 0
+  Setting platform precision to mixed
+  Deserializing System...
+    Found: 13231 atoms, 6 forces.
+  Deserializing State...  done.
+    Ewald error tolerance in force 0 is 0.0005
+    Ewald parameters: alpha 2.920289872087185 nx 48 ny 48 nz 48
+    Integrator Type: N6OpenMM18LangevinIntegratorE
+    Constraint Tolerance: 1e-05
+    Time Step in PS: 0.002
+    Temperature: 323.15
+    Friction Coeff: 1
+    Using CPU platform for reference calculations.
+  Checking core state against reference...
+  Checking checkpoint state against reference...
+[ Initialized Core Contexts... ]
+  Using OpenCL on platformId 0 and gpu 0
+  v(^_^)v  MD ready starting from step 2500000
+
+Completed 2500000 out of 25000000 steps (10%)
+Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+Caught signal SIGINT(2) on PID 30194
+Exiting, please wait. . .
+2020-03-15T19:13:42Z
+[ Leaving  Main ]
+Folding@home Core Shutdown: INTERRUPTED
+Project: 14310 (Run 300, Clone 36, Gen 1)
+Unit: 0x000000010002894c5e6cf8cdd4b506aa
+CPU: 0x00000000000000000000000000000000
+Machine: 1
+Digital signatures verified
+*************************** Core21 Folding@home Core ***************************
+       Type: 33
+       Core: Core21
+    Website: http://folding.stanford.edu/
+  Copyright: (c) 2009-2014 Stanford University
+     Author: Yutong Zhao <yutong.zhao@stanford.edu>
+       Args: -dir 01 -suffix 01 -version 705 -lifeline 30232 -checkpoint 15
+             -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device
+             0 -gpu 0
+     Config: <none>
+************************************ Build *************************************
+    Version: 0.0.20
+       Date: Mar 15 2017
+       Time: 17:05:57
+ Repository: Git
+   Revision: c7f9dda6a0531fd6ddfb91818558faa2384f80a0
+     Branch: HEAD
+   Compiler: GNU 4.4.7 20120313 (Red Hat 4.4.7-17)
+    Options: -std=gnu++98 -O3 -funroll-loops -mfpmath=sse -ffast-math
+             -fno-unsafe-math-optimizations -msse2
+   Platform: linux2 4.9.4-moby
+       Bits: 64
+       Mode: Release
+************************************ System ************************************
+        CPU: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+     CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+       CPUs: 8
+     Memory: 31.32GiB
+Free Memory: 20.65GiB
+    Threads: POSIX_THREADS
+ OS Version: 5.3
+Has Battery: false
+ On Battery: false
+ UTC Offset: 1
+        PID: 30236
+        CWD: /home/matthias/Code/docker-images/folding-home/work
+         OS: Linux 5.3.0-40-generic x86_64
+    OS Arch: AMD64
+       GPUs: 0
+       CUDA: Not detected
+     OpenCL: Not detected
+********************************************************************************
+Folding@home GPU Core21 Folding@home Core
+Version 0.0.20
+[1] compatible platform(s):
+  -- 0 --
+  PROFILE = FULL_PROFILE
+  VERSION = OpenCL 1.2 CUDA 10.1.120
+  NAME = NVIDIA CUDA
+  VENDOR = NVIDIA Corporation
+
+(1) device(s) found on platform 0:
+  -- 0 --
+  DEVICE_NAME = GeForce GTX 1060 6GB
+  DEVICE_VENDOR = NVIDIA Corporation
+  DEVICE_VERSION = OpenCL 1.2 CUDA
+
+[ Entering Init ]
+  Launch time: 2020-03-15T19:13:47Z
+  Arguments passed: -dir 01 -suffix 01 -version 705 -lifeline 30232 -checkpoint 15 -gpu-vendor nvidia -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu 0 
+  Found a checkpoint file
+  For testState comparison of CPU and GPU, will use:
+    forceTolerance: 5 kJ/mol/nm
+    energyTolerance: 10 kJ/mol
+[ Leaving  Init ]
+[ Entering Main ]
+  Reading core settings...
+  Total number of steps: 25000000
+  XTC write frequency: 250000
+  Checkpoint write frequency: 250000 (1%)
+  Number of frames per WU: 100
+[ Initializing Core Contexts ]
+  Using platform OpenCL
+  Looking for vendor: nvidia...found on platformId 0
+  Setting platform precision to mixed
+  Deserializing System...
+    Found: 13231 atoms, 6 forces.
+  Deserializing State...  done.
+    Ewald error tolerance in force 0 is 0.0005
+    Ewald parameters: alpha 2.920289872087185 nx 48 ny 48 nz 48
+    Integrator Type: N6OpenMM18LangevinIntegratorE
+    Constraint Tolerance: 1e-05
+    Time Step in PS: 0.002
+    Temperature: 323.15
+    Friction Coeff: 1
+    Using CPU platform for reference calculations.
+  Checking core state against reference...
+  Checking checkpoint state against reference...
+[ Initialized Core Contexts... ]
+  Using OpenCL on platformId 0 and gpu 0
+  v(^_^)v  MD ready starting from step 2500000
+
+Completed 2500000 out of 25000000 steps (10%)
+Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+Completed 2750000 out of 25000000 steps (11%)
+Performance since last checkpoint: 153.7366548 ns/day
+Completed 3000000 out of 25000000 steps (12%)
+Performance since last checkpoint: 153.1914894 ns/day
+Completed 3250000 out of 25000000 steps (13%)
+Performance since last checkpoint: 153.1914894 ns/day

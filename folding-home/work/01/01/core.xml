@@ -1,0 +1,5 @@
+<config>
+ <numSteps v="25000000"/>
+ <xtcFreq>250000</xtcFreq>
+ <precision v="mixed"/>
+</config>

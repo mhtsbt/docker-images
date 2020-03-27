@@ -1,0 +1,18 @@
+diff --git a/src/esp/gfx/WindowlessContext.cpp b/src/esp/gfx/WindowlessContext.cpp
+index bafd098..6da04df 100644
+--- a/src/esp/gfx/WindowlessContext.cpp
++++ b/src/esp/gfx/WindowlessContext.cpp
+@@ -113,9 +113,9 @@ struct ESPEGLContext : ESPContext {
+       CHECK(eglDevId < numDevices)
+           << "[EGL] Could not find an EGL device for CUDA device " << device;
+ 
+-      CHECK(isNvidiaGpuReadable(eglDevId))
+-          << "[EGL] EGL device " << eglDevId << ", CUDA device " << device
+-          << " is not readable";
++      // CHECK(isNvidiaGpuReadable(eglDevId))
++      //     << "[EGL] EGL device " << eglDevId << ", CUDA device " << device
++      //     << " is not readable";
+ 
+       LOG(INFO) << "[EGL] Selected EGL device " << eglDevId
+                 << " for CUDA device " << device;
+

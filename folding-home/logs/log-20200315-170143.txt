@@ -1,0 +1,60 @@
+*********************** Log Started 2020-03-15T17:01:28Z ***********************
+17:01:28:************************* Folding@home Client *************************
+17:01:28:        Website: https://foldingathome.org/
+17:01:28:      Copyright: (c) 2009-2018 foldingathome.org
+17:01:28:         Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+17:01:28:           Args: 
+17:01:28:         Config: <none>
+17:01:28:******************************** Build ********************************
+17:01:28:        Version: 7.5.1
+17:01:28:           Date: May 11 2018
+17:01:28:           Time: 19:59:04
+17:01:28:     Repository: Git
+17:01:28:       Revision: 4705bf53c635f88b8fe85af7675557e15d491ff0
+17:01:28:         Branch: master
+17:01:28:       Compiler: GNU 6.3.0 20170516
+17:01:28:        Options: -std=gnu++98 -O3 -funroll-loops
+17:01:28:       Platform: linux2 4.14.0-3-amd64
+17:01:28:           Bits: 64
+17:01:28:           Mode: Release
+17:01:28:******************************* System ********************************
+17:01:28:            CPU: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+17:01:28:         CPU ID: GenuineIntel Family 6 Model 94 Stepping 3
+17:01:28:           CPUs: 8
+17:01:28:         Memory: 31.32GiB
+17:01:28:    Free Memory: 18.58GiB
+17:01:28:        Threads: POSIX_THREADS
+17:01:28:     OS Version: 5.3
+17:01:28:    Has Battery: false
+17:01:28:     On Battery: false
+17:01:28:     UTC Offset: 1
+17:01:28:            PID: 21900
+17:01:28:            CWD: /home/matthias/Code/docker-images/folding-home
+17:01:28:             OS: Linux 5.3.0-40-generic x86_64
+17:01:28:        OS Arch: AMD64
+17:01:28:           GPUs: 0
+17:01:28:  CUDA Device 0: Platform:0 Device:0 Bus:1 Slot:0 Compute:6.1 Driver:10.1
+17:01:28:OpenCL Device 0: Platform:0 Device:0 Bus:1 Slot:0 Compute:1.2 Driver:430.50
+17:01:28:***********************************************************************
+17:01:28:<config>
+17:01:28:  <!-- Folding Slots -->
+17:01:28:</config>
+17:01:28:Connecting to assign1.foldingathome.org:8080
+17:01:28:Updated GPUs.txt
+17:01:28:Read GPUs.txt
+17:01:28:Trying to access database...
+17:01:28:Successfully acquired database lock
+17:01:28:Enabled folding slot 00: PAUSED cpu:6 (not configured)
+17:01:28:Enabled folding slot 01: PAUSED gpu:0:GP106 [GeForce GTX 1060 6GB] 4372 (not configured)
+17:01:30:Caught signal SIGINT(2) on PID 21900
+17:01:30:Exiting, please wait. . .
+17:01:31:Caught signal SIGINT(2) on PID 21900
+[93m17:01:31:WARNING:Next signal will force exit[0m
+17:01:31:Saving configuration to config.xml
+17:01:31:<config>
+17:01:31:  <!-- Folding Slots -->
+17:01:31:  <slot id='0' type='CPU'/>
+17:01:31:  <slot id='1' type='GPU'/>
+17:01:31:</config>
+17:01:31:Set client configured
+17:01:31:Clean exit

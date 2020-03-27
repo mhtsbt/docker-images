@@ -1,0 +1,19 @@
+*********************** Log Started 2020-03-15T17:27:12Z ***********************
+Project: 14310 (Run 300, Clone 36, Gen 1)
+Unit: 0x000000010002894c5e6cf8cdd4b506aa
+CPU: 0x00000000000000000000000000000000
+Machine: 1
+Reading tar file core.xml
+Reading tar file integrator.xml
+Reading tar file state.xml
+Reading tar file system.xml
+Digital signatures verified
+Folding@home GPU Core21 Folding@home Core
+Version 0.0.20
+Completed 0 out of 25000000 steps (0%)
+Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+Completed 250000 out of 25000000 steps (1%)
+Completed 500000 out of 25000000 steps (2%)
+Caught signal SIGINT(2) on PID 23085
+Exiting, please wait. . .
+Folding@home Core Shutdown: INTERRUPTED

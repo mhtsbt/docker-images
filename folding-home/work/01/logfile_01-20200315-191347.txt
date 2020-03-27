@@ -1,0 +1,14 @@
+*********************** Log Started 2020-03-15T19:12:35Z ***********************
+Project: 14310 (Run 300, Clone 36, Gen 1)
+Unit: 0x000000010002894c5e6cf8cdd4b506aa
+CPU: 0x00000000000000000000000000000000
+Machine: 1
+Digital signatures verified
+Folding@home GPU Core21 Folding@home Core
+Version 0.0.20
+  Found a checkpoint file
+Completed 2500000 out of 25000000 steps (10%)
+Temperature control disabled. Requirements: single Nvidia GPU, tmax must be < 110 and twait >= 900
+Caught signal SIGINT(2) on PID 30194
+Exiting, please wait. . .
+Folding@home Core Shutdown: INTERRUPTED
