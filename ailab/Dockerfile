@@ -11,4 +11,9 @@ RUN pip3 install --no-cache-dir torch tensorflow-gpu numpy tensorboard matplotli
 
 COPY bash_aliases /root/.bash_aliases
 
+# ENV VARS
+ENV MKL_NUM_THREADS=2
+ENV NUMEXPR_NUM_THREADS=2
+ENV OMP_NUM_THREADS=2
+
 CMD ["tail","-f","/dev/null"]
