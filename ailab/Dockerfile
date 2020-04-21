@@ -7,7 +7,7 @@ RUN git config --global user.email "matthias.hutsebaut@gmail.com"
 RUN git config --global user.name "mhtsbt"
 RUN git config --global credential.helper 'cache –timeout 28800'
 
-RUN pip3 install --no-cache-dir torch tensorflow-gpu numpy tensorboard matplotlib Pillow tabulate ray
+RUN pip3 install --no-cache-dir torch tensorflow-gpu numpy tensorboard matplotlib Pillow tabulate ray pandas opencv-python gym[atari] gym ray[tune] tensorboardX
 
 COPY bash_aliases /root/.bash_aliases
 
