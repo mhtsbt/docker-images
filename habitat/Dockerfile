@@ -1,10 +1,10 @@
-FROM nvidia/cudagl:10.1-runtime-ubuntu16.04
+FROM nvidia/cudagl:10.2-devel-ubuntu16.04
 
 # Setup basic packages
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential git curl ca-certificates libjpeg-dev libpng-dev libglfw3-dev libglm-dev libx11-dev libomp-dev libegl1-mesa-dev libsm6 xorg-dev freeglut3-dev pkg-config libbullet-dev wget rsync && rm -rf /var/lib/apt/lists/*
 
 # Install conda
-RUN curl -o ~/miniconda.sh -O  https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh  &&\
+RUN curl -o ~/miniconda.sh -O  https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh  &&\
     chmod +x ~/miniconda.sh &&\
     ~/miniconda.sh -b -p /opt/conda &&\
     rm ~/miniconda.sh &&\
@@ -13,7 +13,7 @@ RUN curl -o ~/miniconda.sh -O  https://repo.continuum.io/miniconda/Miniconda3-la
 ENV PATH /opt/conda/bin:$PATH
 
 # Conda environment
-RUN conda create -n habitat python=3.6 cmake=3.14.0
+RUN /opt/conda/bin/conda create -n habitat python=3.6 cmake=3.14.0
 
 # Setup habtiat-sim (0.1.4)
 RUN git clone https://github.com/facebookresearch/habitat-sim.git
@@ -26,7 +26,7 @@ ADD habitat-sim-gpulab-dgx2.patch /habitat-sim
 RUN cd habitat-sim && git apply habitat-sim-gpulab-dgx2.patch && rm habitat-sim-gpulab-dgx2.patch
 
 # Install habitat-sim (0.1.4)
-RUN /bin/bash -c ". activate habitat; cd habitat-sim; python setup.py build_ext --parallel 1 install --headless"
+RUN /bin/bash -c ". activate habitat; cd habitat-sim; python setup.py build_ext --parallel 1 install --headless --with-cuda"
 
 # Setup habitat-api
 RUN git clone https://github.com/facebookresearch/habitat-api.git
