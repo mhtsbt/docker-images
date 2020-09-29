@@ -15,17 +15,16 @@ ENV PATH /opt/conda/bin:$PATH
 # Conda environment
 RUN /opt/conda/bin/conda create -n habitat python=3.6 cmake=3.14.0
 
-# Setup habtiat-sim (0.1.4)
-RUN git clone https://github.com/facebookresearch/habitat-sim.git
+# Setup habtiat-sim
+RUN git clone https://github.com/mhtsbt/habitat-sim.git
 RUN cd habitat-sim
-#&& git checkout tags/v0.1.4;
 RUN /bin/bash -c ". activate habitat; cd habitat-sim; pip install --no-cache -r requirements.txt --progress-bar off"
 
 # Apply patch for DGX-2.
 ADD habitat-sim-gpulab-dgx2.patch /habitat-sim
 RUN cd habitat-sim && git apply habitat-sim-gpulab-dgx2.patch && rm habitat-sim-gpulab-dgx2.patch
 
-# Install habitat-sim (0.1.4)
+# Install habitat-sim
 RUN /bin/bash -c ". activate habitat; cd habitat-sim; python setup.py build_ext --parallel 1 install --headless --with-cuda"
 
 # Setup habitat-api
