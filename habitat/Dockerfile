@@ -21,8 +21,8 @@ RUN cd habitat-sim
 RUN /bin/bash -c ". activate habitat; cd habitat-sim; pip install --no-cache -r requirements.txt --progress-bar off"
 
 # Apply patch for DGX-2.
-ADD habitat-sim-gpulab-dgx2.patch /habitat-sim
-RUN cd habitat-sim && git apply habitat-sim-gpulab-dgx2.patch && rm habitat-sim-gpulab-dgx2.patch
+#ADD habitat-sim-gpulab-dgx2.patch /habitat-sim
+#RUN cd habitat-sim && git apply habitat-sim-gpulab-dgx2.patch && rm habitat-sim-gpulab-dgx2.patch
 
 # Install habitat-sim
 RUN /bin/bash -c ". activate habitat; cd habitat-sim; python setup.py build_ext --parallel 1 install --headless --with-cuda"
